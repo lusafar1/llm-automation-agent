@@ -30,3 +30,12 @@ async def read_file(path: str):
     with open(file_path, "r") as file:
         content = file.read()
     return {"content": content}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+    
+@app.get("/")
+async def root():
+    return {"message": "API is running"}
+    
