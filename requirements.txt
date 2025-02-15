@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+openai
+requests
+pandas
+beautifulsoup4
+sqlite3
+python-magic
